@@ -15,6 +15,20 @@ public class Lab {
      * divisible by both, return 'FizzBuzz'. If none of these are true, return a blank string "".
      */
     public String FizzBuzzGen(int n){
-        return "";
+        // used Bitwise AND operator & to test both sides
+        // also decided to place checking for 'n' values divisible by both 3 and 5 first since it's more specific
+        if((n % 3 == 0) & (n % 5 == 0)){
+            return("FizzBuzz");
+        }
+        else if(n % 3 == 0){
+            return("Fizz");
+        }
+        else if(n % 5 == 0){
+            return("Buzz");
+        }
+        else{
+            return "";
+        }
+        
     }
 }

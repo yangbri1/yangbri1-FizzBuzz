@@ -20,15 +20,21 @@ public class Lab {
         if((n % 3 == 0) & (n % 5 == 0)){
             return("FizzBuzz");
         }
+        // if 'n' is only divisible by 3 ...
         else if(n % 3 == 0){
+            // return custom message "Fizz"
             return("Fizz");
         }
+        // if 'n' is only divisible by 5 ...
         else if(n % 5 == 0){
+            // return respective message "Buzz"
             return("Buzz");
         }
+        // if 'n' is neither divisible by 5 & 3 nor divisible by 3 or divisible by 5 ...
         else{
+            // return empty String
             return "";
         }
-        
+    
     }
 }
